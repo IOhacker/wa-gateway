@@ -22,10 +22,10 @@ COPY . .
 # Install all dependencies
 RUN npm install
 
-RUN npm run build
+#RUN npm run build
 
 # Expose the port
-EXPOSE 3000
+EXPOSE 5001
 
 # command to run when intantiate an image
-CMD ["npm","start"]
+CMD ["npm","run start"]
