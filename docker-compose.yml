@@ -3,9 +3,10 @@ version: "2.2"
 networks:
   lacamara:
     driver: bridge
+
 services:
-  lacamara-aml-ms:
-    image: harbor.flexcore.mx/lacamara/com.mx.fintecheando.wa.gateway.main:latest
+  wa-gateway:
+    image: harbor.flexcore.mx/flexcore/com.mx.flexcore.wa.gateway.master
     mem_limit: 2048m    
     restart: always
     environment:
@@ -14,4 +15,4 @@ services:
     ports:
       - "5001:5001"
     networks:
-      - lacamara  
+      - lacamara        
