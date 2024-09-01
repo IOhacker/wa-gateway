@@ -28,4 +28,4 @@ RUN npm install
 EXPOSE 5001
 
 # command to run when intantiate an image
-CMD ["npm","run start"]
+CMD ["npm","start"]
